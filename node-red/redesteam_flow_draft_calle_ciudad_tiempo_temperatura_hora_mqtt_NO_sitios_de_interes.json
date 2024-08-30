@@ -1,0 +1,24 @@
+[
+    {
+        "id": "36bda8dfaf25a61d",
+        "type": "function",
+        "z": "7d3c7b60df2367be",
+        "name": "Prompt Generator",
+        "func": "var prompt = \"Una foto realista hecha en \"+ flow.get(\"calle\").toString()+\"(\"+flow.get(\"ciudad\").toString()+\"). El tiempo es \"+flow.get(\"weather\").toString()+\",la temperatura es de \"+flow.get(\"temperatura\").toString()+\" grados.La foto esta hecha por la \"+flow.get(\"fecha\").toString()+\".photo, photograph, raw photo, analog photo, 4k, fujifilm photograph\";\n\nmsg.payload = prompt;\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 260,
+        "wires": [
+            [
+                "24a29ca3ec162dac",
+                "77f7c737ba637e05",
+                "6d02566464bf0515"
+            ]
+        ]
+    }
+]
